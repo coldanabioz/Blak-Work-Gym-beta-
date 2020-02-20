@@ -27,6 +27,7 @@ nav {
 	width: 800px;
 	height: 50px;
     text-align:center;
+    margin-bottom: 50px;
 }
 .topnav {
 	background-color: #fff;
@@ -49,80 +50,33 @@ nav {
     display: none;
 }
 
-
-.slogan {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.slogan p {
-    font-family: 'Pirata One', cursive;
-    font-size: 100px;
-    border-bottom: 3px solid #000;
-    border-top: 3px solid #000;
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-.preference {
-    display: flex;
-    justify-content: center; 
-    margin-top: 50px;
-}
-.preference p {
-    font-size: 50px;
-    font-family: 'Pirata One', cursive;
-    border-bottom: 3px solid #000;
-    border-top: 3px solid #000;
-}
 .page_picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.advanteges_container {
+
+.serv {
 	display: flex;
+    align-items: center;
 	justify-content: center;
 }
-.advanteges {
+.services {
 	padding-top: 40px;
 	padding-bottom: 40px;
-	width: 70%;
+	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	text-align: center;
 	flex-wrap: wrap;
 }
-.advanteges li {
-    position: relative;
-    margin-bottom: 30px;
-    list-style-type: none;
-}
-.advanteges_items {
-	width: 30%;
-}
-.descr {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.8);
-    font-size: 20px;
-    color: white;
+.services_items {
+    margin-top: 50px;
+	width: 40%;
     text-align: center;
-    padding-top: 40px;
-    opacity: 0;
-    transform: scale(0) rotate(90deg);
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
 }
-.advanteges li:hover .descr {
-    opacity: 1;
-    transform: scale(1) rotate(0deg);
-
+.price {
+    font-weight: bold;
 }
-
 
 .footer-blackLine {
     background-color: #000;
@@ -202,45 +156,29 @@ nav {
         display: block;
         text-align: left;
     }
-    .slogan p {
-        font-size: 4.5em;
-    }
     .header-mainLogo {
         margin-left: 40px;
         padding-top: 10px;
     }
-    .preference p {
-        font-size: 2.5em;
+    .page_picture img {
+        width: 100%;
+        display: block;
     }
-    .advanteges_items h2 {
-        font-size: 25px;
+    .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	width: 100%;
     }
-    .advanteges_items .descr {
-        font-size: 17px;
-    }
-    .advanteges_items {
-        width: 45%;
+    .services_items {
+        width: 100%;
     }
 }
 @media screen and (max-width: 525px) {
-    .slogan p {
-        font-size: 3.5em;
+    .services {
+        grid-template-columns: 1fr;
     }
-    .advanteges {
-		flex-direction: column;
-	}
-	.advanteges_items {
-		width: 100%;
-    }
-    .advanteges_items h2 {
-        font-size: 30px;
-    }
-    .advanteges_items .descr {
-        font-size: 18px;
-    }
-}
-@media screen and (max-width: 375px) {
-    .slogan p {
-        font-size: 2.9em;
+    .services img {
+        width: 100%;
+        display: block;
     }
 }
