@@ -176,21 +176,21 @@ services_container {
     .page_picture img {
         width: 100%;
         display: block;
-    }.services {
+    }.services_items {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
         }
-        .services_items {
-            width: 100%;
-        }
+    .services_items {
+        width: 100%;
     }
+}
 @media screen and (max-width: 480px) {
-        .services {
-            grid-template-columns: 1fr;
-        }
-        .services img {
-            width: 100%;
-            display: block;
-        }
+    .services_items {
+        grid-template-columns: 1fr;
     }
+    .services_items img {
+        width: 100%;
+        display: block;
+    }
+}
